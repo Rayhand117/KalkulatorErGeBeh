@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+html {
+    user-select: none;
+}
+section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background-color: hsl(132, 100%, 97%);
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: hsl(184, 85%, 55%);
+}
+.button {
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: hsl(184, 85%, 55%);
+}
+#clear {
+    background-color: hsl(354, 95%, 63%);
+    border-radius: 75% 45% / 45% 75%;
+}
+#clear:hover {
+    border-radius: 0%;
+    background-color: hsl(132, 100%, 97%);
+    color: black;
+    transition: 0.5s ease-out;
+}
+#equal {
+    background-color: hsl(354, 95%, 63%);
+    color: hsl(132, 100%, 97%);
+}
+#equal:hover {
+    background-color: hsl(132, 100%, 97%);
+    color: hsl(354, 95%, 63%);
+    border-radius: 75% 45% / 45% 75%;
+}
+.button:hover {
+    background-color: hsl(354, 95%, 63%);
+    border-radius: 45% 75% / 75% 45%;
+    color: hsl(132, 100%, 97%);
+    transition: 0.5s ease-in-out;
+}
+
+/* RGB */
+.ergebe {
+    background: #020024;
+    background: linear-gradient(155deg,
+     hsl(0, 0%, 100%) 0%,
+     hsl(354, 95%, 63%) 0%,
+     hsl(40, 100%, 50%) 12%,
+     hsl(67, 100%, 50%) 24%,
+     hsl(122, 100%, 50%) 36%,
+     hsl(186, 100%, 50%) 48%,
+     hsl(184, 85%, 45%) 60%,
+     hsl(305, 100%, 70%) 72%,
+     hsl(354, 95%, 83%) 84%,
+     hsl(38, 100%, 50%) 96%);
+    /* position: relative; */
+    animation: gradient 55s linear infinite;
+    /* width: 400px; */
+    position: absolute;
+}
+.ergebe::before {
+    content: '';
+    z-index: -1;
+    width: 415px;
+    position: absolute;
+    height: 585px;
+    background: inherit;
+    filter: blur(4px);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 18.75em 31.25em;
+    }
+    100% {
+        background-position: 0.1em 0.1em;
+    }
+}
