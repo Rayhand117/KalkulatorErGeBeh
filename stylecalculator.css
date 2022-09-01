@@ -27,6 +27,7 @@ section {
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
+    opacity: 0.85;
     font-size: 25px;
     background-color: hsl(132, 100%, 97%);
 }
