@@ -24,6 +24,7 @@ section {
 }
 #display {
     text-align: right;
+    overflow: auto;
     height: 70px;
     line-height: 70px;
     padding: 16px 8px;
@@ -93,7 +94,7 @@ section {
     z-index: -1;
     width: 415px;
     position: absolute;
-    height: 585px;
+    height: 617px;
     background: inherit;
     filter: blur(4px);
 }
