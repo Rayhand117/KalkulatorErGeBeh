@@ -1,6 +1,6 @@
 // Keyboard
 const keyboardInput = document.getElementById('display')
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keyup', (event) => {
     console.log(event)
     if(event.key == '0') {
         keyboardInput.innerHTML += "0"
