@@ -25,10 +25,10 @@ section {
 #display {
     text-align: right;
     overflow: auto;
-    height: 70px;
+    height: 102px;
+    opacity: 0.85;
     line-height: 70px;
     padding: 16px 8px;
-    opacity: 0.85;
     font-size: 25px;
     background-color: hsl(132, 100%, 97%);
 }
